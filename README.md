@@ -27,7 +27,7 @@
 
 From reading context, to editing files, to running commands and checking the outcome, TCode puts the entire coding workflow into one desktop workspace.
 
-| | |
+| Capability | What it does |
 |---|---|
 | **Task-level coding** | Understands project structure and code context, then implements, refactors, and fixes defects across files, verifying the result with real commands. |
 | **Models and providers** | Works with mainstream model services and OpenAI-compatible endpoints, so the team can choose the model and context capabilities that fit its environment. |
