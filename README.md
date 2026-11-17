@@ -20,7 +20,7 @@
 ---
 
 <p align="center">
-  <img src="assets/desktop-home.png" alt="TCode Desktop interface" width="880">
+  <img src="assets/desktop-home.png" alt="TCode Desktop home screen" width="900">
 </p>
 
 ## Not just code completion — the whole task
