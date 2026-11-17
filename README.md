@@ -6,7 +6,7 @@ A graphical AI coding agent for Windows. Manage tasks in a workspace you can see
 
 **[Download the latest release →](../../releases/latest)**
 
-`Windows x64` · `Desktop GUI` · `International edition`
+`Windows x64` · `Desktop GUI`
 
 ---
 
@@ -55,19 +55,23 @@ Download the installer from a newer release and run it. Your settings and projec
 
 ## Verify a download
 
-Every release asset lists its SHA-256 digest on GitHub. To check a file you downloaded:
+Every release lists the SHA-256 digest of each installer. To check a file you downloaded:
 
 ```powershell
 Get-FileHash .\TCode-desktop-international-<version>-win-x64.exe -Algorithm SHA256
 ```
 
-Compare the output with the digest shown on the release page.
+Compare the output with the digest shown next to the file on the release page.
 
 ## About this repository
 
-- This repository hosts **installers only**. It contains no source code.
-- These are the **international edition** builds, which do not include the Token Manager.
-- Only Windows x64 is published here.
+This repository is a download page for TCode Desktop. It hosts the Windows
+installers only — there is no application source code here.
+
+The `Source code (zip)` and `Source code (tar.gz)` entries that GitHub adds to
+every release are automatic snapshots of this repository, which contains only
+this README. Downloading them gives you no application code; use the `.exe`
+installer instead.
 
 ## Requirements
 
