@@ -6,7 +6,7 @@
 
 > **This is an early test build, not a finished product.** We're sharing it with a small group of developers to find out what breaks, what's confusing, and what actually helps. If you try it, please tell us — see [How to give feedback](#how-to-give-feedback).
 
-**TCode is a graphical AI coding agent for Windows.** It takes on whole engineering tasks instead of suggesting the next line: it reads your project, plans a change, edits across files, runs commands, and checks the result. In the SWE-bench-Lite benchmark it resolved **71% of issues (Verified, #1 at the time of testing)** — but a benchmark score is not the same as working well on your codebase, which is exactly why we're here.
+**TCode is a graphical AI coding agent for Windows.** It takes on whole engineering tasks instead of suggesting the next line: it reads your project, plans a change, edits across files, runs commands, and checks the result. This is an early test build, and we put it out now because real codebases tell us things a demo never will — which is exactly why we're here.
 
 <p align="center">
   <a href="../../releases/latest"><img src="https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge" alt="Download"></a>
