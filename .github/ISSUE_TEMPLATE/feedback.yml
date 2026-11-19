@@ -1,0 +1,58 @@
+name: Feedback / suggestion
+description: Tell us what worked, what broke, or what confused you
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing TCode. Rough notes are fine — a screenshot and a few sentences help us more than a polished report. We respond within 24h.
+  - type: input
+    id: version
+    attributes:
+      label: TCode version
+      placeholder: "e.g. 0.1.589"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of feedback is this?
+      options:
+        - A task failed or produced a wrong result
+        - Setup / model configuration friction
+        - Windows / install issue
+        - UI or wording is confusing
+        - Feature request
+        - Something worked surprisingly well
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you ask TCode to do, and what did it actually do?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (optional)
+      description: Repo type / language, project size, model provider. Please do NOT paste private code, secrets, or API keys.
+    validations:
+      required: false
+  - type: checkboxes
+    id: followup
+    attributes:
+      label: Follow-up
+      options:
+        - label: I'm OK with being asked a follow-up question on this issue
+          required: false
+        - label: I'd like to test the fix when it ships
+          required: false
