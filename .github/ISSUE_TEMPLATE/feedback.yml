@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for testing TCode. Rough notes are fine — a screenshot and a few sentences help us more than a polished report. We respond within 24h.
+        Thanks for testing TCode. Rough notes are fine — a screenshot and a few sentences help us more than a polished report. We respond within one business day.
   - type: input
     id: version
     attributes:
