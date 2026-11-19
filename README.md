@@ -6,7 +6,7 @@
 
 > **This is an early test build, not a finished product.** We're sharing it with a small group of developers to find out what breaks, what's confusing, and what actually helps. If you try it, please tell us — see [How to give feedback](#how-to-give-feedback).
 
-**TCode is a graphical AI coding agent for Windows.** It takes on whole engineering tasks instead of suggesting the next line: it reads your project, plans a change, edits across files, runs commands, and checks the result. In the SWE-bench-Lite benchmark it resolved **71% of issues (Verified, #1 at the time of testing)** — but a benchmark score is not the same as working well on your codebase, which is exactly why we're here.
+**TCode is a graphical AI coding agent for Windows.** It takes on whole engineering tasks instead of suggesting the next line: it reads your project, plans a change, edits across files, runs commands, and checks the result.
 
 <p align="center">
   <a href="../../releases/latest"><img src="https://img.shields.io/badge/Download-Latest%20Release-2ea44f?style=for-the-badge" alt="Download"></a>
@@ -117,7 +117,11 @@ A task that touches more than one file is worth ten that don't. And if something
 The desktop app is free to download during this preview. Model access is configured by you in Settings → Providers — bring your own API key or sign in with a supported account. Any model costs are set by that provider, not by us. We're still working out the billing details for this build; the in-app Settings are the source of truth.
 
 **Where does my code go?**
-Your code and prompts are sent to the model provider **you** configure. We do not use them for training. The app also collects anonymous usage metadata (never prompt contents) and includes a usage-statistics consent control in Settings. This repository contains installers only, no application source.
+Your code and prompts are sent to the model provider **you** configure. We do not use them for training.
+
+Separately, the app sends anonymous usage metadata to our own server at `ai.lenovomm.com` — a server we operate, located in mainland China. That metadata is operational only: event names, your app version, OS name, a random installation id, session and turn ids, provider and model codes, durations, and error categories. It never includes your prompts, your code, file contents, or model responses. You can turn it off in **Settings → Usage statistics**.
+
+This repository contains installers only, no application source.
 
 **Is the source code available?**
 No. This repository distributes Windows installers only. The `Source code (zip)` / `Source code (tar.gz)` entries that GitHub adds to every release are snapshots of this download page, not the application. Use the `.exe` installer.
