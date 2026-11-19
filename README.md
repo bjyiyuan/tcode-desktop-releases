@@ -72,6 +72,18 @@ Compare it with the digest shown next to the file on the release page.
 
 ---
 
+## Try this first
+
+Not sure what to throw at it? These three tasks tend to tell us the most:
+
+1. **Fix a failing test** in a small open-source repo — let TCode find the cause, then check whether it edited the right file.
+2. **Make sense of an unfamiliar module** — open a repo you've never seen and ask what a specific part does and where to start.
+3. **Add a small feature** with a clear acceptance criterion (a CLI flag, an extra field), then read the diff yourself.
+
+A task that touches more than one file is worth ten that don't. And if something goes wrong, that's exactly the report we want.
+
+---
+
 ## How to give feedback
 
 **Please use GitHub Issues** — it's the channel we read first during this preview, and it's public, so other testers can confirm what you're seeing.
@@ -94,6 +106,8 @@ Compare it with the digest shown next to the file on the release page.
 - Large repositories and very long tasks may be slow or hit context limits
 - SmartScreen may warn because the installer is not yet signed by a widely trusted certificate
 - The interface and wording are still rough — this is a test build
+- Automatic updates are not available in this build — download each new version from Releases instead of waiting for an in-app update
+- You may still see billing- or credits-related wording in Settings left over from an earlier build; it does not apply during this preview
 
 ---
 
