@@ -47,6 +47,14 @@ body:
       description: Repo type / language, project size, model provider. Please do NOT paste private code, secrets, or API keys.
     validations:
       required: false
+  - type: input
+    id: source
+    attributes:
+      label: How did you hear about TCode? (optional)
+      description: A DM, a post, a friend, or an invite code if you had one. This only helps us understand which channels bring in testers.
+      placeholder: "e.g. invite code / a friend / Hacker News"
+    validations:
+      required: false
   - type: checkboxes
     id: followup
     attributes:
