@@ -108,6 +108,34 @@ A task that touches more than one file is worth ten that don't. And if something
 - The interface and wording are still rough — this is a test build
 - Automatic updates are not available in this build — download each new version from Releases instead of waiting for an in-app update
 - You may still see billing- or credits-related wording in Settings left over from an earlier build; it does not apply during this preview
+- Offline voice input needs a one-time download of its speech model on first use; on some networks that download can fail
+
+---
+
+## Data & privacy
+
+**What we collect.** Anonymous usage metadata only: app version, operating system, event names, session and turn identifiers, model provider and model names, task durations, and error categories. Never your prompts, your code, file contents, repository paths, or model responses.
+
+**What we don't do.** We don't use your code or prompts for training, and we don't sell or share this data.
+
+**Where your code goes.** Straight to the model provider you configure in Settings → Providers, over that provider's own connection. We don't relay or store it. Model costs are set by that provider.
+
+**Two separate uploads, and we say so.**
+
+| Upload | What it contains | Can you turn it off? |
+|-|-|-|
+| Usage statistics | The event metadata described above | Yes — at first launch, and later in **Settings → Usage statistics** |
+| Install count | A random installation ID, app version, OS, and install source | No — sent once per install, independent of that switch |
+
+Turning usage statistics off stops any upload in progress and clears the local queue. It does not delete statistics already received by our server.
+
+**Deleting data that was already sent.** Open a [privacy request](https://github.com/bjyiyuan/tcode-desktop-releases/issues/new/choose) and include the installation ID shown in **Settings → Usage statistics**. We remove the associated statistics within 30 days and confirm when it's done.
+
+**Retention.** Raw usage events are kept for 12 months, then deleted or reduced to aggregate counts that carry no installation identifier.
+
+**Age.** This preview is intended for users who are 18 or older, or the age of majority in their jurisdiction.
+
+**Changes.** If this policy changes in a material way, we'll say so in the release notes and in the in-app announcement.
 
 ---
 
@@ -117,7 +145,7 @@ A task that touches more than one file is worth ten that don't. And if something
 The desktop app is free to download during this preview. Model access is configured by you in Settings → Providers — bring your own API key or sign in with a supported account. Any model costs are set by that provider, not by us. We're still working out the billing details for this build; the in-app Settings are the source of truth.
 
 **Where does my code go?**
-Your code and prompts are sent to the model provider **you** configure. We do not use them for training. The app also collects anonymous usage metadata (never prompt contents) and includes a usage-statistics consent control in Settings. This repository contains installers only, no application source.
+Your code and prompts go to the model provider **you** configure, not to us, and are never used for training. Separately, TCode collects anonymous usage metadata and sends a one-time install count. Both are described in **[Data & privacy](#data--privacy)** — what's collected, how to turn it off, and how to have data already sent deleted. This repository contains installers only, no application source.
 
 **Is the source code available?**
 No. This repository distributes Windows installers only. The `Source code (zip)` / `Source code (tar.gz)` entries that GitHub adds to every release are snapshots of this download page, not the application. Use the `.exe` installer.
