@@ -53,7 +53,7 @@ You don't need to write a polished report. A screenshot, a short description and
 
 ## Install
 
-1. Download the latest test build from **[Releases](https://github.com/bjyiyuan/tcode-desktop-releases/releases/latest)** — `TCode-desktop-international-<version>-win-x64.exe`.
+1. Download the latest test build from **[Releases](https://github.com/bjyiyuan/tcode-desktop-releases/releases/latest)** — pick the Windows x64 `.exe` of the newest version.
 2. Run the installer. If Windows SmartScreen warns, choose **More info → Run anyway**.
 3. Launch TCode, open the repository you want to work in, and connect a model in **Settings → Providers**.
 4. Describe a task and watch it read → plan → edit → run → verify.
@@ -65,7 +65,7 @@ You don't need to write a polished report. A screenshot, a short description and
 Every release lists the SHA-256 digest of the installer:
 
 ```powershell
-Get-FileHash .\TCode-desktop-international-<version>-win-x64.exe -Algorithm SHA256
+Get-FileHash .\<downloaded-file>.exe -Algorithm SHA256
 ```
 
 Compare it with the digest shown next to the file on the release page.
