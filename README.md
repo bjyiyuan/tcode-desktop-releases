@@ -92,7 +92,7 @@ A task that touches more than one file is worth ten that don't. And if something
 - Found a reproducible bug? Use the **Bug report** template instead
 - A screenshot, a short description and your version number is plenty — rough notes are fine
 
-> The in-app feedback dialog is not wired up in this build, so please don't rely on it.
+> The app also has a Feedback entry in Settings, but we have not verified end-to-end delivery for it in this build. GitHub Issues remains the main channel during this preview.
 
 **What we commit to:** every report gets a first response within one business day, and we'll tell you within two business days whether it's being fixed and in which version. Fixes are listed in the release notes with the issue number, so you can see what your report changed.
 
@@ -102,7 +102,7 @@ A task that touches more than one file is worth ten that don't. And if something
 
 - Windows only for now; macOS and Linux are not supported in this preview
 - Model access depends on how you configure it in Settings → Providers; most configurations require an API key or an account sign-in
-- The in-app feedback dialog may not deliver in this build — please use GitHub Issues instead
+- The in-app Feedback entry is present, but its end-to-end delivery has not been verified in this build
 - Large repositories and very long tasks may be slow or hit context limits
 - SmartScreen may warn because the installer is not yet signed by a widely trusted certificate
 - The interface and wording are still rough — this is a test build
